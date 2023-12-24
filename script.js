@@ -1,7 +1,6 @@
-let tl = gsap.timeline();
+// let tl = gsap.timeline();
 
-tl.from(".navbar",{
-    y : -10,
-    duration : 2,
-    stagger : 0.5
-})
+// tl.from(".home-img",{
+//     y : -500,
+//     opacity: 1,scale : 1
+// })

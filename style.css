@@ -108,8 +108,12 @@ section{
 
 .home-img{
     border-radius: 50%;
+    transition: .8s ease-in-out;
 }
 
+.home-img:hover{
+    transform: scale(1.1);
+}
 .home-img img{
     border-radius: 50%;
     position: relative;
@@ -166,7 +170,7 @@ section{
 }
 
 .btn:hover{
-    transform: scale(1.1)translateY(6px);
+    transform: scale(1.1);
     font-weight: 600;
     background: var(--bg-color);
     color: var(--main-color);
@@ -185,12 +189,12 @@ section{
 
 .text-animation span::before{
     content: "Web Developer";
-    color: crimson;
+    color: var(--main-color);
     animation: words 20s infinite;
 }
 
-.text-animation span  ::after{
-    content: "";
+.text-animation span::after{
+    content: " ";
     background-color: var(--bg-color);
     position: absolute;
     width: calc(100% + 8px);
@@ -254,4 +258,104 @@ section{
     85%{
         width: calc(100% + 8px);
     }    
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    background: var(--seconf-bg-color);
+}
+
+.about-img{
+    border-radius: 50%;
+    
+}
+
+.about-img img{
+    position: relative;
+    width: 30vw;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.about-img img:hover{
+    transform: scale(1.1);
+}
+
+.heading{
+    text-align: center;
+    font-size: 80px;
+}
+
+.about-content h2{
+    text-align: left;
+    line-height: 1.5;
+
+}
+
+.about-content h3{
+    font-size: 3.2rem;
+}
+
+.about-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}    
+
+.text-animation span::before{
+    content: "Web Developer";
+    color: var(--main-color);
+    animation: words 20s infinite;
+}
+
+.text-animation span::after{
+    content: " ";
+    background-color: var(--seconf-bg-color);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 2px solid #f1f1f1;
+    right: -8px;
+    animation: cursor 0.6 infinite , typing 20s steps(14) infinite;
+}
+
+.service-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.service-container .service-box{
+    flex: 1 1 40rem;
+    background: white;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid rgb(224, 224, 224);
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.service-container .service-box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+}
+
+.service-box i{
+    font-size: 7rem;
+}
+
+.service-box p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
+.service-box h3{
+    font-size: 2.6rem;
 }
